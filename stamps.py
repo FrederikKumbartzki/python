@@ -11,4 +11,5 @@ def stamps(n):
 
 
 
+
 stamps(50)
