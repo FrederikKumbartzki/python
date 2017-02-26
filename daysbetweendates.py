@@ -8,18 +8,12 @@
 
 def nextDay(year, month, day):
     """Simple version: assume every month has 30 days"""
-  
     if day < 30:
-        days += 1
         return year, month, day + 1
-        
     else:
         if month == 12:
-            days += 1
             return year + 1, 1, 1
-            
         else:
-            days += 1
             return year, month + 1, 1
         
 def daysBetweenDates(year1, month1, day1, year2, month2, day2):
@@ -29,16 +23,7 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
        the second."""
         
     # YOUR CODE HERE!
-    
-    while day1 <= day2:
-        nextDay(year1, month1, day1)
-        
-
-
-    
-    return days
-
-daysBetweenDates(2017, 1, 1, 2017, 1, 3)
+    return
 
 def test():
     test_cases = [((2012,9,30,2012,10,30),30), 
@@ -52,5 +37,5 @@ def test():
         else:
             print "Test case passed!"
 
-#test()
+test()
     
